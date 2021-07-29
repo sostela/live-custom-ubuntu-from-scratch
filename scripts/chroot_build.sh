@@ -111,7 +111,6 @@ function install_pkg() {
     resolvconf \
     net-tools \
     wireless-tools \
-    wpagui \
     grub-common \
     grub-gfxpayload-lists \
     grub-pc \
@@ -123,12 +122,12 @@ function install_pkg() {
     apt-get install -y --no-install-recommends $TARGET_KERNEL_PACKAGE
 
     # graphic installer - ubiquity
-    apt-get install -y \
-    ubiquity \
-    ubiquity-casper \
-    ubiquity-frontend-gtk \
-    ubiquity-slideshow-ubuntu \
-    ubiquity-ubuntu-artwork
+    #apt-get install -y \
+    #ubiquity \
+    #ubiquity-casper \
+    #ubiquity-frontend-gtk \
+    #ubiquity-slideshow-ubuntu \
+    #ubiquity-ubuntu-artwork
 
     # Call into config function
     customize_image
